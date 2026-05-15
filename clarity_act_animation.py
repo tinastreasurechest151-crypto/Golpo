@@ -10,6 +10,9 @@ Length: 55 seconds
 
 import json
 import os
+import sys
+import urllib.request
+import urllib.error
 
 
 # ---------------------------------------------------------------------------
@@ -674,29 +677,51 @@ def print_scene_summary(project):
 # ---------------------------------------------------------------------------
 # Golpo Canvas render call
 # ---------------------------------------------------------------------------
+GOLPO_API_BASE = "https://api.golpo.io/v2/canvas"
+
 def render(project):
-    """
-    Submit the project to the Golpo Canvas rendering engine.
+    api_key = os.environ.get("GOLPO_API_KEY", "")
+    if not api_key:
+        print("ERROR: GOLPO_API_KEY environment variable not set.")
+        sys.exit(1)
 
-    In a live Golpo environment this function calls the canvas SDK:
-
-        from golpo.canvas import CanvasRenderer
-        renderer = CanvasRenderer(api_key=os.environ["GOLPO_API_KEY"])
-        job = renderer.render(project)
-        job.wait()
-        print("Download:", job.download_url)
-
-    The project dict is fully self-contained so the renderer has everything
-    it needs: scenes, timings, sharpie brush config, voice settings, and
-    export parameters.
-    """
-    print("Submitting to Golpo Canvas renderer…")
-    print(
-        "  Output: {}  ({})".format(
-            project["export"]["output_filename"], project["export"]["format"].upper()
-        )
+    payload = json.dumps(project).encode("utf-8")
+    req = urllib.request.Request(
+        "{}/render".format(GOLPO_API_BASE),
+        data=payload,
+        headers={
+            "Content-Type":  "application/json",
+            "Authorization": "Bearer {}".format(api_key),
+            "Accept":        "application/json",
+        },
+        method="POST",
     )
-    print("  [Render job queued — check Golpo Studio dashboard for progress]")
+
+    print("Submitting to Golpo Canvas renderer…")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = json.loads(resp.read().decode("utf-8"))
+            job_id       = body.get("job_id", "—")
+            status       = body.get("status", "—")
+            download_url = body.get("download_url", "")
+            eta          = body.get("eta_seconds", "—")
+
+            print("  Job ID:   {}".format(job_id))
+            print("  Status:   {}".format(status))
+            print("  ETA:      {}s".format(eta))
+            if download_url:
+                print("  Download: {}".format(download_url))
+            else:
+                print("  [Render queued — check Golpo Studio dashboard for progress]")
+            return body
+
+    except urllib.error.HTTPError as exc:
+        error_body = exc.read().decode("utf-8", errors="replace")
+        print("  HTTP {}: {}".format(exc.code, error_body))
+        sys.exit(1)
+    except urllib.error.URLError as exc:
+        print("  Network error: {}".format(exc.reason))
+        sys.exit(1)
 
 
 # ---------------------------------------------------------------------------
