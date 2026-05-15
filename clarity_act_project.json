@@ -1,0 +1,798 @@
+{
+  "project": {
+    "title": "The Clarity Act \u2014 Crypto's Game Changer",
+    "golpo_type": "canvas",
+    "version": "2.0",
+    "video_style": "sharpie",
+    "orientation": "vertical",
+    "resolution": {
+      "width": 1080,
+      "height": 1920
+    },
+    "frame_rate": 30,
+    "duration_seconds": 55,
+    "pacing": "normal"
+  },
+  "voice": {
+    "gender": "male",
+    "tone": "happy_upbeat",
+    "speed": 1.0,
+    "pitch": 1.05,
+    "volume": 1.0
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "ink": "#1A1A1A",
+    "accent_gold": "#F5A623",
+    "accent_green": "#27AE60",
+    "accent_red": "#E74C3C",
+    "accent_blue": "#2980B9",
+    "accent_gray": "#7F8C8D"
+  },
+  "brush": {
+    "stroke_type": "marker",
+    "roughness": 0.65,
+    "ink_spread": 0.3,
+    "line_variation": 0.2,
+    "fill_style": "hatch"
+  },
+  "scenes": [
+    {
+      "id": "scene_01_hook",
+      "start": 0.0,
+      "end": 7.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "Is the \"Wild West\" of crypto finally over? The CLARITY Act is here, and it's a game-changer.",
+      "elements": [
+        {
+          "type": "icon",
+          "asset": "icons/cowboy_hat.svg",
+          "x": 540,
+          "y": 700,
+          "scale": 1.3,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.2,
+            "duration": 1.2
+          },
+          "wobble": true
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "Wild West\nof Crypto\u2026",
+          "x": 540,
+          "y": 1000,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.4,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "\u26a1 CLARITY ACT \u26a1",
+          "x": 540,
+          "y": 1200,
+          "color_override": "#F5A623",
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 3.0,
+            "duration": 0.8
+          }
+        },
+        {
+          "type": "underline_scribble",
+          "x1": 160,
+          "y1": 1250,
+          "x2": 920,
+          "y2": 1250,
+          "color": "#F5A623",
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.8,
+            "duration": 0.5
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "Game. Changer.",
+          "x": 540,
+          "y": 1380,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 4.5,
+            "duration": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_02_sec_cftc",
+      "start": 7.0,
+      "end": 16.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "This law finally ends the \"Is it a security or a commodity?\" debate. It draws a clear line between the SEC and the CFTC.",
+      "elements": [
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "Security\nor\nCommodity?",
+          "x": 540,
+          "y": 500,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.2,
+            "duration": 1.2
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/sec_shield.svg",
+          "x": 270,
+          "y": 900,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.6,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "SEC",
+            "style": "body",
+            "y_offset": 160
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/cftc_shield.svg",
+          "x": 810,
+          "y": 900,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 2.4,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "CFTC",
+            "style": "body",
+            "y_offset": 160
+          }
+        },
+        {
+          "type": "divider_line",
+          "x1": 540,
+          "y1": 680,
+          "x2": 540,
+          "y2": 1120,
+          "color": "#2980B9",
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.4,
+            "duration": 0.7
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/gavel.svg",
+          "x": 540,
+          "y": 1300,
+          "scale": 1.1,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 4.2,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "CLARITY ACT\ndraws the line \u2713",
+          "x": 540,
+          "y": 1530,
+          "color_override": "#2980B9",
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 5.2,
+            "duration": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_03_good_institutions",
+      "start": 16.0,
+      "end": 24.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "The Good? Massive institutional money. Wall Street has been waiting for \"permission\" to enter, and this is the green light.",
+      "elements": [
+        {
+          "type": "text",
+          "style": "label_good",
+          "content": "\u2705 THE GOOD",
+          "x": 540,
+          "y": 340,
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 0.1,
+            "duration": 0.6
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/wall_street_bull.svg",
+          "x": 540,
+          "y": 780,
+          "scale": 1.4,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.8,
+            "duration": 1.4
+          }
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "Massive\nInstitutional\nMoney \ud83d\udcb0",
+          "x": 540,
+          "y": 1180,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 2.4,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/green_light.svg",
+          "x": 540,
+          "y": 1530,
+          "scale": 0.9,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.6,
+            "duration": 0.8
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "Wall Street gets\nthe GREEN LIGHT",
+          "x": 540,
+          "y": 1720,
+          "color_override": "#27AE60",
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 4.4,
+            "duration": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_04_good_protections",
+      "start": 24.0,
+      "end": 33.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "It also adds investor protections \u2014 aimed at preventing the next FTX-style collapse \u2014 by requiring proof of reserves and audits.",
+      "elements": [
+        {
+          "type": "text",
+          "style": "label_good",
+          "content": "\u2705 THE GOOD",
+          "x": 540,
+          "y": 300,
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 0.1,
+            "duration": 0.5
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/vault_open.svg",
+          "x": 300,
+          "y": 750,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.7,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "Reserves\nProof",
+            "style": "body",
+            "y_offset": 170
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/audit_clipboard.svg",
+          "x": 780,
+          "y": 750,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.5,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "Audits\nRequired",
+            "style": "body",
+            "y_offset": 170
+          }
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "No More\nFTX-Style\nCollapses \u274c",
+          "x": 540,
+          "y": 1250,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 2.6,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "strike_through",
+          "label": "FTX",
+          "x": 540,
+          "y": 1320,
+          "width": 220,
+          "color": "#E74C3C",
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.7,
+            "duration": 0.5
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "Investor protections\nfinally encoded in law",
+          "x": 540,
+          "y": 1600,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 4.4,
+            "duration": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_05_bad_stablecoins",
+      "start": 33.0,
+      "end": 41.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "The Bad? It's a blow to \"Passive Income.\" The Act restricts stablecoins from paying interest or yield to keep banks happy.",
+      "elements": [
+        {
+          "type": "text",
+          "style": "label_bad",
+          "content": "\u274c THE BAD",
+          "x": 540,
+          "y": 300,
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 0.1,
+            "duration": 0.5
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/stablecoin.svg",
+          "x": 540,
+          "y": 760,
+          "scale": 1.3,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.7,
+            "duration": 1.1
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/no_interest.svg",
+          "x": 540,
+          "y": 760,
+          "scale": 1.6,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "color_override": "#E74C3C",
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.9,
+            "duration": 0.7
+          }
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "No Interest.\nNo Yield.\non Stablecoins",
+          "x": 540,
+          "y": 1200,
+          "color_override": "#E74C3C",
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 2.8,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "Banks > Passive Income \ud83c\udfe6",
+          "x": 540,
+          "y": 1530,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 4.0,
+            "duration": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_06_bad_kyc",
+      "start": 41.0,
+      "end": 48.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "wipe_right",
+      "narration": "Plus, expect stricter KYC. Your privacy might take a hit as transactions move closer to the traditional banking grid. Innovation is staying in the US, but the \"anonymity\" era is fading.",
+      "elements": [
+        {
+          "type": "text",
+          "style": "label_bad",
+          "content": "\u274c THE BAD",
+          "x": 540,
+          "y": 300,
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 0.1,
+            "duration": 0.5
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/kyc_id_card.svg",
+          "x": 300,
+          "y": 780,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 0.7,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "Stricter\nKYC",
+            "style": "body",
+            "y_offset": 160
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/privacy_broken.svg",
+          "x": 780,
+          "y": 780,
+          "scale": 1.0,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.5,
+            "duration": 1.0
+          },
+          "label": {
+            "text": "Privacy\nHit",
+            "style": "body",
+            "y_offset": 160
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/us_flag.svg",
+          "x": 540,
+          "y": 1280,
+          "scale": 0.95,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 2.6,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "text",
+          "style": "body",
+          "content": "Innovation stays \ud83c\uddfa\ud83c\uddf8\nbut anonymity fades\u2026",
+          "x": 540,
+          "y": 1530,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.7,
+            "duration": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_07_cta",
+      "start": 48.0,
+      "end": 55.0,
+      "background_color": "#FFFFFF",
+      "transition_in": "wipe_right",
+      "transition_out": "fade_out",
+      "narration": "Is this a win or a killjoy for crypto? Drop a comment and subscribe for the latest!",
+      "elements": [
+        {
+          "type": "icon",
+          "asset": "icons/question_mark.svg",
+          "x": 540,
+          "y": 550,
+          "scale": 1.5,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 0.2,
+            "duration": 0.7
+          }
+        },
+        {
+          "type": "text",
+          "style": "headline",
+          "content": "Win or Killjoy\nfor Crypto? \ud83d\ude80",
+          "x": 540,
+          "y": 900,
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 1.0,
+            "duration": 1.0
+          }
+        },
+        {
+          "type": "text",
+          "style": "cta",
+          "content": "\ud83d\udcac Drop a\nComment!",
+          "x": 540,
+          "y": 1200,
+          "entrance": {
+            "animation": "bounce_in",
+            "delay": 2.2,
+            "duration": 0.7
+          }
+        },
+        {
+          "type": "icon",
+          "asset": "icons/subscribe_bell.svg",
+          "x": 540,
+          "y": 1520,
+          "scale": 1.1,
+          "brush": {
+            "stroke_type": "marker",
+            "roughness": 0.65,
+            "ink_spread": 0.3,
+            "line_variation": 0.2,
+            "fill_style": "hatch"
+          },
+          "color_override": "#E74C3C",
+          "entrance": {
+            "animation": "draw_on",
+            "delay": 3.2,
+            "duration": 0.8
+          }
+        },
+        {
+          "type": "text",
+          "style": "cta",
+          "content": "\ud83d\udd14 SUBSCRIBE\nfor the Latest!",
+          "x": 540,
+          "y": 1720,
+          "entrance": {
+            "animation": "pulse",
+            "delay": 4.1,
+            "duration": 0.7
+          }
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "background_music": {
+      "style": "lo_fi_upbeat",
+      "bpm": 110,
+      "volume": 0.18,
+      "fade_in_seconds": 1.0,
+      "fade_out_seconds": 2.0
+    },
+    "voice_over": {
+      "gender": "male",
+      "tone": "happy_upbeat",
+      "speed": 1.0,
+      "pitch": 1.05,
+      "volume": 1.0,
+      "text_to_speech_engine": "golpo_tts_v2",
+      "scenes": [
+        "Is the \"Wild West\" of crypto finally over? The CLARITY Act is here, and it's a game-changer.",
+        "This law finally ends the \"Is it a security or a commodity?\" debate. It draws a clear line between the SEC and the CFTC.",
+        "The Good? Massive institutional money. Wall Street has been waiting for \"permission\" to enter, and this is the green light.",
+        "It also adds investor protections \u2014 aimed at preventing the next FTX-style collapse \u2014 by requiring proof of reserves and audits.",
+        "The Bad? It's a blow to \"Passive Income.\" The Act restricts stablecoins from paying interest or yield to keep banks happy.",
+        "Plus, expect stricter KYC. Your privacy might take a hit as transactions move closer to the traditional banking grid. Innovation is staying in the US, but the \"anonymity\" era is fading.",
+        "Is this a win or a killjoy for crypto? Drop a comment and subscribe for the latest!"
+      ]
+    },
+    "sound_effects": [
+      {
+        "trigger": "scene_01_hook",
+        "sfx": "paper_swoosh",
+        "volume": 0.5
+      },
+      {
+        "trigger": "scene_02_sec_cftc",
+        "sfx": "gavel_bang",
+        "volume": 0.6
+      },
+      {
+        "trigger": "scene_03_good_institutions",
+        "sfx": "cash_register",
+        "volume": 0.5
+      },
+      {
+        "trigger": "scene_04_good_protections",
+        "sfx": "lock_click",
+        "volume": 0.5
+      },
+      {
+        "trigger": "scene_05_bad_stablecoins",
+        "sfx": "buzzer",
+        "volume": 0.55
+      },
+      {
+        "trigger": "scene_06_bad_kyc",
+        "sfx": "shred_paper",
+        "volume": 0.5
+      },
+      {
+        "trigger": "scene_07_cta",
+        "sfx": "notification_ding",
+        "volume": 0.6
+      }
+    ]
+  },
+  "export": {
+    "format": "mp4",
+    "codec": "h264",
+    "bitrate_kbps": 8000,
+    "audio_bitrate": "320k",
+    "output_filename": "clarity_act_crypto_55s.mp4"
+  }
+}
