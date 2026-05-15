@@ -677,7 +677,7 @@ def print_scene_summary(project):
 # ---------------------------------------------------------------------------
 # Golpo Canvas render call
 # ---------------------------------------------------------------------------
-GOLPO_API_BASE = "https://api.golpo.io/v2/canvas"
+GOLPO_API_BASE = "https://api.golpoai.com/v2/canvas"
 
 def render(project):
     api_key = os.environ.get("GOLPO_API_KEY", "")
